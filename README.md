@@ -36,7 +36,10 @@
 
 * also you can run inference using detect.py and you must put your file link insted of 0:
 
-python detect.py --source 0  # webcam
+   python detect.py --source 0 
+  
+  
+                          # webcam
                           img.jpg  # image
                           vid.mp4  # video
                           path/  # directory
@@ -52,5 +55,19 @@ python detect.py --source 0  # webcam
 <details>
 <summary>train</summary>
 <br>
+  
+* for train with your data you must change  datsaet.yaml flie. put your dataset root directory path and relative paths to train / val:
+  
+    path: datasets
+  
+    train: train/images
+  
+    val: val/images
+  
+* also specify the label and number of classes.
+    # Classes
+    nc: 7 # number of classes
+  
+    names: [ 'pc', 'laptop', 'flower', 'glass', 'woman', 'man','chair' ]  # class names
         
-<details>
+</details>
