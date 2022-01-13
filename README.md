@@ -1,4 +1,4 @@
-# image_classification_yolov5
+# Readme
 
 <details>
 <summary>Install</summary>
